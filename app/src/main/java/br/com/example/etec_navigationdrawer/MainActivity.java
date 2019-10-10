@@ -77,19 +77,34 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        String nome = null;
+        int idImagem = 0;
 
-        if (id == R.id.nav_home) {
+        if (id == R.id.nav_cris) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
 
-        } else if (id == R.id.nav_slideshow) {
+            nome = "CR7";
 
-        } else if (id == R.id.nav_tools) {
+            idImagem = R.drawable.cris;
+        } else if (id == R.id.nav_messi) {
+            nome = "Messi";
 
-        } else if (id == R.id.nav_share) {
+            idImagem = R.drawable.messi;
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_guerrero) {
+            nome = "Guerrero";
 
+            idImagem = R.drawable.mostro;
+
+        } else if (id == R.id.nav_salah) {
+            nome = "Salah";
+
+            idImagem = R.drawable.salah;
+
+        } else if (id == R.id.nav_ney) {
+            nome = "Neymar";
+
+            idImagem = R.drawable.ney;
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
